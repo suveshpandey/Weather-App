@@ -1,0 +1,25 @@
+.card{
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    background: linear-gradient(145deg, #00fbff, #3636b9 );
+    height: auto;
+    min-height: 0px;
+    min-width: 350px
+}
+.weather{
+    display: none;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out forwards;
+}

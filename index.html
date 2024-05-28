@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather App | Suvesh Pandey</title>
+</head>
+<body class="bg-gray-900 flex items-center justify-center pt-[80px]">
+    <div class="card w-auto rounded-lg text-center p-[20px]">
+        <div class="search grid grid-cols-[80%_auto] items-center pl-[10px] w-[100%]">
+            <input type="text" placeholder="Enter the city name..." spellcheck="false" class="h-full rounded-l-[50px] rounded-r-[50px] pl-[10px] text-[15px] outline-none">
+            <button class="bg-white w-[40px] h-[40px] ml-[10px] rounded-[50px] pl-[9px] pt-[3px] hover:bg-[#c1fedf]"><img src="search.png" alt="" class=" rounded-[50px] h-[25px]"></button>
+        </div>
+        <div class="error mt-[20px] font-semibold text-red-300 animate-pulse" style="display: none;">
+            <p>Invalid city name!</p>
+        </div>
+        <div class="weather flex flex-col justify-center items-center" style="display: none;">
+            <img src="clear.png" class="weather-icon size-[130px] ml-[90px]  animate-pulse">
+            <h1 class="temp text-white font-bold text-[40px] animate-pulse">22 °C</h1>
+            <h2 class="city text-gray-100 font-bold text-[20px]">Chitrakoot</h2>
+            
+            <div class="details grid grid-cols-2  w-full h-auto items-center justify-center py-[10px] mt-[60px]">
+                <div class="col flex items-center justify-cente w-[100px]">
+                    <img src="humidity.png" class="size-[35px]">
+                    <div class=" text-white font-semibold text-[18px] ml-[10px]">
+                        <p class="humidity">50%</p>
+                        <p class="text-[10px]">Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col flex items-center justify-center w-[150px]">
+                    <img src="wind.png" class="size-[35px]">
+                    <div class=" text-white font-semibold text-[18px] ml-[10px]">
+                        <p class="wind">15 km/h</p>
+                        <p class="text-[10px]">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
